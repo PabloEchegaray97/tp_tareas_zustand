@@ -53,8 +53,8 @@ export const Modal: React.FC<IModal> = ({handleCloseModal}) => {
                         <input type="date" required autoComplete='off' name='fechaLimite' placeholder='Fecha límite' value={formValues.fechaLimite} onChange={handleChange}/>
                     </div>
                     <div className={styles.buttonCard}>
-                        <button onClick={handleCloseModal}>Cancelar</button>
-                        <button type="submit">{tareaActiva ? "Editar tarea" : "Crear tarea"}</button>
+                        <button className="btn outlined" onClick={handleCloseModal}>Cancelar</button>
+                        <button className="btn" type="submit">{tareaActiva ? "Editar tarea" : "Crear tarea"}</button>
                     </div>
                 </form>
 

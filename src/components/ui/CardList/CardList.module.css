@@ -8,10 +8,14 @@
 }
 .actionCard {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     gap: 1rem;
 }
+.actionCard button {
+    height: fit-content;
+}
+
 .actionCard button:hover {
     cursor: pointer;
 }

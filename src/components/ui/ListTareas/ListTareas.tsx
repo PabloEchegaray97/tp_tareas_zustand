@@ -27,7 +27,7 @@ export const ListTareas = () => {
         <div className={styles.containerPrincipalListTareas}>
             <div className={styles.containerTitleAndButton}>
                 <h2>Lista de tareas</h2>
-                <button onClick={() => setOpenModalTarea(true)}>Agregar tarea</button>
+                <button className="btn" onClick={() => setOpenModalTarea(true)}>Agregar tarea</button>
             </div>
             <div className={styles.containerList}>
                 {
@@ -36,8 +36,8 @@ export const ListTareas = () => {
                             <CardList key={tarea.id} tarea={tarea} handleOpenModalEdit={handleOpenModalEdit}/>
                         ))
                     ) : (
-                        <div>
-                            <h3>No hay tareas</h3>
+                        <div className={styles.containerNoTareas}>
+                            <h3>No hay tareas por el momento...</h3>
                         </div>
                     )}
                 </div>

@@ -3,7 +3,7 @@ import { TareasScreen } from "./components/screens/TareasScreen";
 function App() {
 
   return (
-    <div>
+    <div className="containerApp">
       <TareasScreen />
     </div>
   )

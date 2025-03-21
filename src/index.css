@@ -2,4 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'monospace', sans-serif;
+}
+.btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+.red {
+    background-color: red;
+    color: #000;
+}
+.outlined {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    outline: 1px solid #000;
+    transition: all 0.3s ease;
 }

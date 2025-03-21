@@ -22,8 +22,8 @@ export const CardList: React.FC<ICardList> = ({ tarea, handleOpenModalEdit }) =>
                 <p>Fecha límite: <b>{tarea.fechaLimite}</b></p>
             </div>
             <div className={styles.actionCard}>
-                <button onClick={editarTarea}>Editar</button>
-                <button onClick={eliminarTarea}>Eliminar</button>
+                <button className="btn" onClick={editarTarea}>Editar</button>
+                <button className="btn red" onClick={eliminarTarea}>Eliminar</button>
             </div>
         </div>
     )
